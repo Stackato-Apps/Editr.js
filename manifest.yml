@@ -1,0 +1,4 @@
+applications:
+- name: editr
+  mem: 32M
+  path: editr

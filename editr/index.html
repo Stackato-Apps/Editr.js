@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Editr</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <link rel="stylesheet" href="editr.css">
+</head>
+<body>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/ace/1.1.01/min/ace.js"></script>
+    <script src="//cdn.jsdelivr.net/ace/1.1.01/min/ext-emmet.js"></script>
+    <script src="libs/ext.emmet.js"></script>
+    <script src="editr.js"></script>
+    <script src="libs/parser.coffeescript.js"></script>
+    <script src="libs/parser.less.js"></script>
+ 
+    <div class="editr"></div>
+ 
+    <script>
+    $('.editr').each(function() {
+        new Editr({
+            el: this,
+        });
+    });
+    </script>
+</body>
+</html>
