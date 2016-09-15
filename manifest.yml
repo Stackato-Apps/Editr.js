@@ -1,4 +1,6 @@
 applications:
 - name: editr
+  buildpack: https://github.com/cloudfoundry/staticfile-buildpack
   memory: 32M
   path: editr
+  stack: cflinuxfs2
